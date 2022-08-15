@@ -3,11 +3,13 @@ package com.david.pruebatienda.serviceimp;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import com.david.pruebatienda.model.FacturaTemporal;
 import com.david.pruebatienda.repository.FacturaTemporalRepository;
 import com.david.pruebatienda.service.SFacturaTemporal;
 
+@Component
 public class FacturaTemporalImp implements SFacturaTemporal {
 	
 	@Autowired(required = true)
