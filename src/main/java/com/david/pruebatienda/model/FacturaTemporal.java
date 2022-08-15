@@ -40,7 +40,7 @@ public class FacturaTemporal implements Serializable{
 	
 	@ManyToOne
 	@JoinColumn(name="idBorrador")
-	private Borrador borrador;
+	private Borrador Borrador;
 
 	public int getIdF() {
 		return idF;
@@ -83,17 +83,17 @@ public class FacturaTemporal implements Serializable{
 	}
 
 	public Borrador getBorrador() {
-		return borrador;
+		return Borrador;
 	}
 
 	public void setBorrador(Borrador borrador) {
-		this.borrador = borrador;
+		this.Borrador = borrador;
 	}
 
 	@Override
 	public String toString() {
 		return "FacturaTemporal [idF=" + idF + ", precioUnidad=" + precioUnidad + ", cantidad=" + cantidad
-				+ ", precioTotal=" + precioTotal + ", producto=" + producto + ", borrador=" + borrador + "]";
+				+ ", precioTotal=" + precioTotal + ", producto=" + producto + ", borrador=" + Borrador + "]";
 	}
 		
 	
