@@ -21,7 +21,7 @@ import com.david.pruebatienda.service.SFacturaTemporal;
 @RequestMapping({"/Prueba1/FacturaTemporal"})
 public class FacturaTemporalController {
 	
-	@Autowired
+	@Autowired(required=true)
 	private SFacturaTemporal service;
 	
 	@GetMapping

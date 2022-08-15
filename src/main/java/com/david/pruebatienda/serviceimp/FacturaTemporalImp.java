@@ -10,7 +10,7 @@ import com.david.pruebatienda.service.SFacturaTemporal;
 
 public class FacturaTemporalImp implements SFacturaTemporal {
 	
-	@Autowired
+	@Autowired(required = true)
 	private FacturaTemporalRepository repositorio;
 
 	@Override
