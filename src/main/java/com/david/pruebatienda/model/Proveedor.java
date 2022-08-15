@@ -27,7 +27,7 @@ public class Proveedor implements Serializable{
 	private String nombre;
 	
 	@Column
-	private String numeroIdentificacion;
+	private String numeroidentificacion;
 	
 	@Column
 	private String telefono;
@@ -39,7 +39,7 @@ public class Proveedor implements Serializable{
 	private String direccion;
 	
 	@ManyToOne
-	@JoinColumn(name="tipoIdentificacion_id")
+	@JoinColumn(name="tipoidentificacion_id")
 	private TipoIdentificacion idTipo;
 
 	public int getId() {
@@ -59,11 +59,11 @@ public class Proveedor implements Serializable{
 	}
 
 	public String getNumeroIdentificacion() {
-		return numeroIdentificacion;
+		return numeroidentificacion;
 	}
 
 	public void setNumeroIdentificacion(String numeroIdentificacion) {
-		this.numeroIdentificacion = numeroIdentificacion;
+		this.numeroidentificacion = numeroIdentificacion;
 	}
 
 	public String getTelefono() {
@@ -100,7 +100,7 @@ public class Proveedor implements Serializable{
 
 	@Override
 	public String toString() {
-		return "Proveedor [id=" + id + ", nombre=" + nombre + ", numeroIdentificacion=" + numeroIdentificacion
+		return "Proveedor [id=" + id + ", nombre=" + nombre + ", numeroIdentificacion=" + numeroidentificacion
 				+ ", telefono=" + telefono + ", correo=" + correo + ", direccion=" + direccion + "]";
 	}
 	

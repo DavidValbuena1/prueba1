@@ -39,10 +39,10 @@ public class Producto implements Serializable{
 	private long cantidad;
 	
 	@Column
-	private long precioUnidad;
+	private long preciounidad;
 	
 	@Column
-	private long precioTotal;
+	private long preciototal;
 
 	public int getId() {
 		return id;
@@ -85,25 +85,25 @@ public class Producto implements Serializable{
 	}
 
 	public long getPrecioUnidad() {
-		return precioUnidad;
+		return preciounidad;
 	}
 
 	public void setPrecioUnidad(long precioUnidad) {
-		this.precioUnidad = precioUnidad;
+		this.preciounidad = precioUnidad;
 	}
 
 	public long getPrecioTotal() {
-		return precioTotal;
+		return preciototal;
 	}
 
 	public void setPrecioTotal(long precioTotal) {
-		this.precioTotal = precioTotal;
+		this.preciototal = precioTotal;
 	}
 
 	@Override
 	public String toString() {
 		return "Producto [id=" + id + ", idCategoria=" + idCategoria + ", idProveedor=" + idProveedor + ", nombre="
-				+ nombre + ", cantidad=" + cantidad + ", precioUnidad=" + precioUnidad + ", precioTotal=" + precioTotal
+				+ nombre + ", cantidad=" + cantidad + ", precioUnidad=" + preciounidad + ", precioTotal=" + preciototal
 				+ "]";
 	}
 	

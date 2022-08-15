@@ -40,7 +40,7 @@ public class Cliente implements Serializable{
 	private TipoIdentificacion idTipo;
 	
 	@Column
-	private String numeroIdentificacion;
+	private String numeroidentificacion;
 	
 	@Column
 	private String password;
@@ -94,11 +94,11 @@ public class Cliente implements Serializable{
 	}
 
 	public String getNumeroIdentificacion() {
-		return numeroIdentificacion;
+		return numeroidentificacion;
 	}
 
 	public void setNumeroIdentificacion(String numeroIdentificacion) {
-		this.numeroIdentificacion = numeroIdentificacion;
+		this.numeroidentificacion = numeroIdentificacion;
 	}
 
 	public String getPassword() {
@@ -112,7 +112,7 @@ public class Cliente implements Serializable{
 	@Override
 	public String toString() {
 		return "Cliente [id=" + id + ", nombre=" + nombre + ", direccion=" + direccion + ", correo=" + correo
-				+ ", telefono=" + telefono + ", idTipo=" + idTipo + ", numeroIdentificacion=" + numeroIdentificacion
+				+ ", telefono=" + telefono + ", idTipo=" + idTipo + ", numeroIdentificacion=" + numeroidentificacion
 				+ ", password=" + password + "]";
 	}
 	

@@ -36,13 +36,13 @@ public class Usuario implements Serializable {
 	private String telefono;
 	
 	@Column
-	private String numeroIdentificacion;
+	private String numeroidentificacion;
 	
 	@Column
 	private String password;
 	
 	@ManyToOne
-	@JoinColumn(name="tipoIdentificaciones_id")
+	@JoinColumn(name="tipoidentificaciones_id")
 	private TipoIdentificacion idTipo;
 	
 	@ManyToOne
@@ -90,11 +90,11 @@ public class Usuario implements Serializable {
 	}
 
 	public String getNumeroIdentificacion() {
-		return numeroIdentificacion;
+		return numeroidentificacion;
 	}
 
 	public void setNumeroIdentificacion(String numeroIdentificacion) {
-		this.numeroIdentificacion = numeroIdentificacion;
+		this.numeroidentificacion = numeroIdentificacion;
 	}
 
 	public String getPassword() {
@@ -124,7 +124,7 @@ public class Usuario implements Serializable {
 	@Override
 	public String toString() {
 		return "Usuario [id=" + id + ", nombre=" + nombre + ", direccion=" + direccion + ", correo=" + correo
-				+ ", telefono=" + telefono + ", numeroIdentificacion=" + numeroIdentificacion + ", password=" + password
+				+ ", telefono=" + telefono + ", numeroIdentificacion=" + numeroidentificacion + ", password=" + password
 				+ ", idTipo=" + idTipo + ", idRol=" + idRol + "]";
 	}
 	

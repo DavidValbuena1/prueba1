@@ -26,20 +26,20 @@ public class FacturaTemporal implements Serializable{
 	private int idF;
 	
 	@Column
-	private long precioUnidad;
+	private long preciounidad;
 	
 	@Column
 	private long cantidad;
 	
 	@Column
-	private long precioTotal;
+	private long preciototal;
 	
 	@OneToOne
-	@JoinColumn(name="codProducto")
+	@JoinColumn(name="codproducto")
 	private Producto producto;
 	
 	@ManyToOne
-	@JoinColumn(name="idBorrador")
+	@JoinColumn(name="idborrador")
 	private Borrador Borrador;
 
 	public int getIdF() {
@@ -51,11 +51,11 @@ public class FacturaTemporal implements Serializable{
 	}
 
 	public long getPrecioUnidad() {
-		return precioUnidad;
+		return preciounidad;
 	}
 
 	public void setPrecioUnidad(long precioUnidad) {
-		this.precioUnidad = precioUnidad;
+		this.preciounidad = precioUnidad;
 	}
 
 	public long getCantidad() {
@@ -67,11 +67,11 @@ public class FacturaTemporal implements Serializable{
 	}
 
 	public long getPrecioTotal() {
-		return precioTotal;
+		return preciototal;
 	}
 
 	public void setPrecioTotal(long precioTotal) {
-		this.precioTotal = precioTotal;
+		this.preciototal = precioTotal;
 	}
 
 	public Producto getProducto() {
@@ -92,8 +92,8 @@ public class FacturaTemporal implements Serializable{
 
 	@Override
 	public String toString() {
-		return "FacturaTemporal [idF=" + idF + ", precioUnidad=" + precioUnidad + ", cantidad=" + cantidad
-				+ ", precioTotal=" + precioTotal + ", producto=" + producto + ", borrador=" + Borrador + "]";
+		return "FacturaTemporal [idF=" + idF + ", precioUnidad=" + preciounidad + ", cantidad=" + cantidad
+				+ ", precioTotal=" + preciototal + ", producto=" + producto + ", borrador=" + Borrador + "]";
 	}
 		
 	
