@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.david.pruebatienda.model.FacturaTemporal;
@@ -18,13 +17,12 @@ import com.david.pruebatienda.service.SFacturaTemporal;
 
 @CrossOrigin(origins ="*")
 @RestController
-@RequestMapping({"/Prueba1/FacturaTemporal"})
 public class FacturaTemporalController {
 	
 	@Autowired
 	private SFacturaTemporal service;
 	
-	@GetMapping("/Prueba1/FacturaTemporal/listar")
+	@GetMapping(path="/Prueba1/FacturaTemporal/listar")
 	public List<FacturaTemporal> listar(){
 		return service.obtenerFacturasTemporales();
 	}
@@ -39,7 +37,7 @@ public class FacturaTemporalController {
 		return service.obtenerDetallesId(idBorrador);
 	}
 	
-	@PostMapping("/Prueba1/FacturaTemporal/agregar")
+	@PostMapping(path="/Prueba1/FacturaTemporal/agregar")
 	public FacturaTemporal agregar(@RequestBody FacturaTemporal f) {
 		return service.insertarDetalleTemp(f);
 	}
