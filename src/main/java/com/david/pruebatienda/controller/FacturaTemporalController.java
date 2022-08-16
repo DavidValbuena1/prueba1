@@ -21,36 +21,36 @@ import com.david.pruebatienda.service.SFacturaTemporal;
 @RequestMapping({"/Prueba1/FacturaTemporal"})
 public class FacturaTemporalController {
 	
-	@Autowired(required=true)
+	@Autowired
 	private SFacturaTemporal service;
 	
-	@GetMapping
+	@GetMapping("/Prueba1/FacturaTemporal/listar")
 	public List<FacturaTemporal> listar(){
 		return service.obtenerFacturasTemporales();
 	}
 	
-	@GetMapping (path= {"/{id}"})
+	@GetMapping(path= {"/Prueba1/FacturaTemporal/listarId/{id}"})
 	public FacturaTemporal listarId(@PathVariable("id") int id) {
 		return service.buscarId(id);
 	}
 	
-	@GetMapping (path= {"/{idBorrador}"})
+	@GetMapping (path= {"/Prueba1/FacturaTemporal/obtenerDetalles/{idBorrador}"})
 	public List<FacturaTemporal> obtenerDetalles(@PathVariable("idBorrador") int idBorrador){
 		return service.obtenerDetallesId(idBorrador);
 	}
 	
-	@PostMapping
+	@PostMapping("/Prueba1/FacturaTemporal/agregar")
 	public FacturaTemporal agregar(@RequestBody FacturaTemporal f) {
 		return service.insertarDetalleTemp(f);
 	}
 	
-	@PutMapping(path= {"/{id}"})
+	@PutMapping(path= {"/Prueba1/FacturaTemporal/editar/{id}"})
 	public FacturaTemporal editar(@RequestBody FacturaTemporal f, @PathVariable("id") int id) {
 		f.setIdF(id);
 		return service.editarDetalleTemp(f);
 	}
 	
-	@DeleteMapping(path= {"/{id}"})
+	@DeleteMapping(path= {"/Prueba1/FacturaTemporal/eliminar/{id}"})
 	public FacturaTemporal eliminar(@PathVariable("id") int id) {
 		return service.borrarDetalleTemp(id);
 	}
