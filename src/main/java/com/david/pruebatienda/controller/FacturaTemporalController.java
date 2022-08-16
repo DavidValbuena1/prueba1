@@ -20,10 +20,10 @@ import com.david.pruebatienda.service.SFacturaTemporal;
 @RestController
 public class FacturaTemporalController {
 	
-	@Autowired
+	@Autowired(required=true)
 	private SFacturaTemporal service;
 	
-	@GetMapping(path="/Prueba1/FacturaTemporal/listar")
+	@GetMapping(path={"/Prueba1/FacturaTemporal/listar"})
 	public List<FacturaTemporal> listar(){
 		return service.obtenerFacturasTemporales();
 	}
@@ -38,7 +38,7 @@ public class FacturaTemporalController {
 		return service.obtenerDetallesId(idBorrador);
 	}
 	
-	@PostMapping(path="/Prueba1/FacturaTemporal/agregar")
+	@PostMapping(path={"/Prueba1/FacturaTemporal/agregar"})
 	public FacturaTemporal agregar(@RequestBody FacturaTemporal f) {
 		return service.insertarDetalleTemp(f);
 	}
