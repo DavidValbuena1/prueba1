@@ -8,7 +8,6 @@ import com.david.pruebatienda.model.FacturaTemporal;
 
 @Component
 public interface SFacturaTemporal {
-	
 	public List<FacturaTemporal> obtenerFacturasTemporales();
 	public FacturaTemporal insertarDetalleTemp(FacturaTemporal f);
 	public FacturaTemporal editarDetalleTemp(FacturaTemporal f);
