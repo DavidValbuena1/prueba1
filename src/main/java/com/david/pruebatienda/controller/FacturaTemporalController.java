@@ -18,7 +18,6 @@ import com.david.pruebatienda.service.SFacturaTemporal;
 
 @CrossOrigin(origins ="*")
 @RestController
-@ComponentScan(basePackageClasses = FacturaTemporal.class)
 public class FacturaTemporalController {
 	
 	@Autowired
