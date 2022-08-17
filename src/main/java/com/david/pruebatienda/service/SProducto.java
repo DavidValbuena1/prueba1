@@ -2,7 +2,6 @@ package com.david.pruebatienda.service;
 
 import java.util.List;
 
-import org.springframework.stereotype.Component;
 
 import com.david.pruebatienda.model.Producto;
 

@@ -13,6 +13,6 @@ public interface FacturaTemporalRepository extends Repository<FacturaTemporal, I
 	public FacturaTemporal save(FacturaTemporal f);
 	public FacturaTemporal deleteById(int id);
 	
-	@Query(value="SELECT f FROM FacturaTemporal f WHERE f.Borrador = :idBorrador")
+	@Query(value="SELECT f FROM FacturaTemporal f WHERE f.Borrador.id = ?1")
 	List<FacturaTemporal> buscarDetallesTemp(int idBorrador);
 }
