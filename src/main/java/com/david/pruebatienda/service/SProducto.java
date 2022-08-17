@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 
 import com.david.pruebatienda.model.Producto;
 
-@Component
+
 public interface SProducto {
 	public List<Producto> obtenerProductos();
 	public Producto insertarProducto(Producto p);
