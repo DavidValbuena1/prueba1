@@ -29,12 +29,12 @@ public class FacturaTemporalController {
 		return service.obtenerFacturasTemporales();
 	}
 	
-	@GetMapping(path= {"listarId/{id}"})
+	@GetMapping(path= {"/listarId/{id}"})
 	public FacturaTemporal listarId(@PathVariable("id") int id) {
 		return service.buscarId(id);
 	}
 	
-	@GetMapping (path= {"/{idBorrador}"})
+	@GetMapping (path= {"/buscarBorrador/{idBorrador}"})
 	public List<FacturaTemporal> obtenerDetalles(@PathVariable("idBorrador") int idBorrador){
 		return service.obtenerDetallesId(idBorrador);
 	}
