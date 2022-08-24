@@ -18,7 +18,7 @@ import com.david.pruebatienda.service.SSucursal;
 
 @CrossOrigin(origins="*")
 @RestController
-@RequestMapping({"/Prueba1/Sucursal"})
+@RequestMapping({"/Prueba1/Sucursales"})
 public class SucursalController {
 	
 	@Autowired(required=true)
