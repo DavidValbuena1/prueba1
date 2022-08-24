@@ -3,11 +3,13 @@ package com.david.pruebatienda.serviceimp;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import com.david.pruebatienda.model.Tienda;
 import com.david.pruebatienda.repository.TiendaRepository;
 import com.david.pruebatienda.service.STienda;
 
+@Component
 public class TiendaImp implements STienda{
 
 	@Autowired(required=true)
