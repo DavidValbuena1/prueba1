@@ -18,7 +18,7 @@ import com.david.pruebatienda.service.STienda;
 
 @CrossOrigin(origins="*")
 @RestController
-@RequestMapping
+@RequestMapping({"/Prueba1/TipoIdentificacion"})
 public class TiendaController {
 	
 	@Autowired(required=true)
