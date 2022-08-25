@@ -49,4 +49,9 @@ public class ProductoController {
 	public Producto eliminar (@PathVariable("id") int id) {
 		return service.borrarProducto(id);
 	}
+	
+	@GetMapping(path = {"/idMaximo"})
+	public int encontrarIdMaximo () {
+		return service.idMaximoProducto();
+	}
 }

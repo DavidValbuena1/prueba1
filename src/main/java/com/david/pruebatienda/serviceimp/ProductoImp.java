@@ -40,4 +40,9 @@ public class ProductoImp implements SProducto {
 		return service.findById(id);
 	}
 
+	@Override
+	public int idMaximoProducto() {
+		return (int) service.idMaximoProducto();
+	}
+
 }

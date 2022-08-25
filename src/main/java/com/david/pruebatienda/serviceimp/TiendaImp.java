@@ -9,6 +9,7 @@ import com.david.pruebatienda.model.Tienda;
 import com.david.pruebatienda.repository.TiendaRepository;
 import com.david.pruebatienda.service.STienda;
 
+
 @Component
 public class TiendaImp implements STienda{
 

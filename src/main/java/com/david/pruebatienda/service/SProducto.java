@@ -12,4 +12,6 @@ public interface SProducto {
 	public Producto editarProducto(Producto p);
 	public Producto borrarProducto(int id);
 	public Producto buscarProducto(int id);
+	
+	public int idMaximoProducto();
 }

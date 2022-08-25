@@ -18,7 +18,7 @@ import com.david.pruebatienda.service.STienda;
 
 @CrossOrigin(origins="*")
 @RestController
-@RequestMapping({"/Prueba1/Tienda"})
+@RequestMapping
 public class TiendaController {
 	
 	@Autowired(required=true)
