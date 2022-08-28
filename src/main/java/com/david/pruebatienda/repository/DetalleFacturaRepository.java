@@ -9,6 +9,7 @@ import com.david.pruebatienda.model.DetalleFactura;
 
 public interface DetalleFacturaRepository extends Repository<DetalleFactura, Integer> {
 	public List<DetalleFactura> findAll();
+	public List<DetalleFactura> saveAll(Iterable<DetalleFactura> lista);
 	public DetalleFactura save(DetalleFactura df);
 	public DetalleFactura findById(int id);
 	public DetalleFactura deleteById(int id);

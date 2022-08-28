@@ -20,8 +20,8 @@ public class DetalleFacturaImp implements SDetalleFactura {
 	}
 
 	@Override
-	public DetalleFactura insertarDetalle(DetalleFactura df) {
-		return repositorio.save(df);
+	public List<DetalleFactura> insertarDetalles(List<DetalleFactura> df) {
+		return repositorio.saveAll(df);
 	}
 
 	@Override
