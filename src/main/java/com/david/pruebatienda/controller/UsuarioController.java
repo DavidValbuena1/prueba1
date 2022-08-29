@@ -49,4 +49,11 @@ public class UsuarioController {
 	public Usuario eliminar(@PathVariable("id") int id) {
 		return service.eliminarUsuario(id);
 	}
+	
+	@PostMapping(path= {"/validar"})
+	public Usuario validar(@RequestBody Usuario u) {
+		String correo = u.getCorreo();
+		String password = u.getPassword();
+		return service.validar(correo, password);
+	}
 }
