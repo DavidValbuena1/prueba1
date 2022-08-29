@@ -13,4 +13,6 @@ public interface SUsuario {
 	public Usuario insertarUsuario(Usuario u);
 	public Usuario editarUsuario(Usuario u);
 	public Usuario eliminarUsuario(int id);
+	
+	public Usuario validar(String correo, String password);
 }
