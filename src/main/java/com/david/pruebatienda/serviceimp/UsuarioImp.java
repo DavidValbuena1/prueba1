@@ -39,5 +39,10 @@ public class UsuarioImp implements SUsuario{
 	public Usuario eliminarUsuario(int id) {
 		return repositorio.deleteById(id);
 	}
+
+	@Override
+	public Usuario validar(String correo, String password) {
+		return repositorio.validar(correo, password);
+	}
 	
 }
