@@ -35,14 +35,14 @@ public class ProductoController {
 	}
 	
 	@PostMapping(path= {"/agregar"})
-	public Producto agregar(@RequestBody Producto p) {
-		return service.insertarProducto(p);
+	public void agregar(@RequestBody Producto p) {
+		service.insertarProducto(p);
 	}
 	
 	@PutMapping(path= {"/editar/{id}"})
-	public Producto editar(@RequestBody Producto p, @PathVariable("id") int id) {
+	public void editar(@RequestBody Producto p, @PathVariable("id") int id) {
 		p.setId(id);
-		return service.editarProducto(p);
+		service.editarProducto(p);
 	}
 	
 	@DeleteMapping(path= {"/eliminar/{id}"})

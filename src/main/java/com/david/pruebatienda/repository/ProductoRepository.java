@@ -11,7 +11,7 @@ public interface ProductoRepository extends Repository<Producto,Integer> {
 	
 	public List<Producto> findAll();
 	public Producto findById(int id);
-	public Producto save(Producto p);
+	public void save(Producto p);
 	public Producto deleteById(int id);
 	
 	@Query("SELECT max(p.id) FROM Producto p")
