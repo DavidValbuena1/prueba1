@@ -40,7 +40,7 @@ public class DetalleFacturaController {
 	}
 	
 	@PostMapping(path= {"/agregar"})
-	public List<DetalleFactura> insertarDetalle(@RequestBody List<DetalleFactura> df) {
+	public boolean insertarDetalle(@RequestBody List<DetalleFactura> df) {
 		return service.insertarDetalles(df);
 	}
 	

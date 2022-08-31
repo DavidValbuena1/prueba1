@@ -6,7 +6,7 @@ import com.david.pruebatienda.model.DetalleFactura;
 
 public interface SDetalleFactura {
 	public List<DetalleFactura> encontrarDetalles();
-	public List<DetalleFactura> insertarDetalles(List<DetalleFactura> lista);
+	public boolean insertarDetalles(List<DetalleFactura> lista);
 	public DetalleFactura editarDetalle(DetalleFactura df);
 	public DetalleFactura eliminarDetalle(int id);
 	public DetalleFactura encontrarDetalle(int id);
