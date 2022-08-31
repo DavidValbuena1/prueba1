@@ -49,4 +49,9 @@ public class CategoriaController {
 	public Categoria eliminarCategoria(@PathVariable("id") int id) {
 		return service.eliminarCategoria(id);
 	}
+	
+	@PostMapping(path= {"/agregarExcel"})
+	public List<Categoria> insertarCategoria(@RequestBody List<Categoria> c) {
+		return service.insertarMultiplesCategorias(c);
+	}
 }

@@ -11,4 +11,5 @@ public interface CategoriaRepository extends Repository<Categoria, Integer>{
 	public Categoria save(Categoria c);
 	public Categoria findById(int id);
 	public Categoria deleteById(int id);
+	public List<Categoria> saveAll(Iterable<Categoria> c);
 }

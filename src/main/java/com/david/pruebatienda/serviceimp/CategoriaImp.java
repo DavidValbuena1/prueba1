@@ -39,5 +39,10 @@ public class CategoriaImp implements SCategoria {
 	public Categoria eliminarCategoria(int id) {
 		return repositorio.deleteById(id);
 	}
+
+	@Override
+	public List<Categoria> insertarMultiplesCategorias(List<Categoria> c) {
+		return repositorio.saveAll(c);
+	}
 	
 }
