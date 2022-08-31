@@ -10,5 +10,5 @@ public interface SCategoria {
 	public Categoria editarCategoria(Categoria c);
 	public Categoria buscarCategoria(int id);
 	public Categoria eliminarCategoria(int id);
-	public List<Categoria> insertarMultiplesCategorias(List<Categoria> c);
+	public List<Categoria> insertarMultiplesCategorias(Iterable<Categoria> c);
 }

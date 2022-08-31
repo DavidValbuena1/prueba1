@@ -41,7 +41,7 @@ public class CategoriaImp implements SCategoria {
 	}
 
 	@Override
-	public List<Categoria> insertarMultiplesCategorias(List<Categoria> c) {
+	public List<Categoria> insertarMultiplesCategorias(Iterable<Categoria> c) {
 		return repositorio.saveAll(c);
 	}
 	

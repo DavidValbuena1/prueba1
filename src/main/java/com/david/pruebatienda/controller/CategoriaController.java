@@ -51,7 +51,7 @@ public class CategoriaController {
 	}
 	
 	@PostMapping(path= {"/agregarExcel"})
-	public List<Categoria> insertarCategoria(@RequestBody List<Categoria> c) {
+	public List<Categoria> insertarCategoria(@RequestBody Iterable<Categoria> c) {
 		return service.insertarMultiplesCategorias(c);
 	}
 }
